@@ -9,10 +9,11 @@
 
   <header class="main-header">
     <div class="container">
-      <a class="index-logo">
-        <img src="img/logo.png" width="139" height="56" alt="nёrds">
-      </a>
-      <nav class="main-navigation">
+	  <nav class="main-navigation">
+        <a class="index-logo">
+          <img src="img/logo.png" width="139" height="56" alt="nёrds">
+        </a>
+      
         <ul>
           <li>
             <a href="#">СТУДИЯ</a>
@@ -31,14 +32,15 @@
           <a href="#">КОРЗИНА</a>
         </div>
       </nav>
-    </div>
-    <div class="welcome">
-      <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
-     </div>
+    
+      <h1 class="welcome">ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
+      
+	</div>
   </header>
 
   <main class="main">
-    <div class="column-three">
+    <div class="container clearfix">
+      <div class="column-four">
       <form>
         <span class="filter-header">СТОИМОСТЬ:</span>
         <div class="range"></div>
@@ -83,45 +85,45 @@
         <button type="button" value="show">ПОКАЗАТЬ</button>
       </form>
     </div>
-    <div class="column-seven column-ofset-one">
-      <form>
+    <div class="column-seven">
+      <div class="sort-container">
         <span class="sort-name">СОРТИРОВАТЬ:</span>
-        <button type="button" value="price">ПО ЦЕНЕ</button>
-        <button type="button" value="type">ПО ТИПУ</button>
-        <button type="button" value="functional">ПО ФУНКЦИОНАЛУ</button>
-        <label for="ascending"></label> 
-		<input type="radio" id="ascending" checked>
-        <label for="descending"></label>
-		<input type="radio" id="descending">
-	  </form>
-        <ul>
-          <li>
-            <a href="#" class="product-item"> 
+        <a href="#">ПО ЦЕНЕ</a>
+        <a href="#">ПО ТИПУ</a>
+        <a href="#">ПО ФУНКЦИОНАЛУ</a>
+        <div class="asc">
+		</div>
+		<div class="desk">
+		</div>
+	  </div>
+        <ul class="clearfix">
+          <li class="product-item">
+            <a href="#"> 
 			  <img src="img/layer34.jpg" alt="Макет-AVIATOR">
 		    </a>
           </li>
-           <li>
-            <a href="#" class="product-item">
+           <li class="product-item">
+            <a href="#">
 			  <img src="img/layer35.jpg" alt="Макет-SUNSET">
 			</a>
           </li>
-           <li>
-            <a href="#" class="product-item">
+           <li class="product-item">
+            <a href="#">
 			  <img src="img/layer36.jpg" alt="Макет-FORTE">
 			</a>
           </li>
-           <li>
-            <a href="#" class="product-item">
+           <li class="product-item">
+            <a href="#">
 			  <img src="img/layer37.jpg" alt="Макет-MODERN ORGANIC THAI">
 			</a>
           </li>
-           <li>
-            <a href="#" class="product-item">
+           <li class="product-item">
+            <a href="#">
 			  <img src="img/layer39.jpg" alt="Макет-AVENUE">
 			</a>
           </li>
-           <li>
-            <a href="#" class="product-item">
+           <li class="product-item">
+            <a href="#">
 			  <img src="img/layer38.jpg" alt="Макет-DOVETAIL">
 			</a>
           </li>
@@ -142,18 +144,23 @@
 	  </ul>
       
     </div>
+  </div>
   </main>
 
   <footer class="main-footer">
       <div class="map">
       </div>
-    <section class="footer-social">
-      <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-      <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-      <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </section>
+	  <div class="container">
+        <div class="column-four">
+          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+	    </div>
+	    <div class="column-seven">
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>		
    </footer>
  </body>
 </html>
