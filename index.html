@@ -3,16 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>nёrd's</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
-    <div class="container">
-      <img src="img/logo.png" width="139" height="56" alt="nёrds">
-        <nav class="main-navigation">
-          <ul>
+    <div class="container clearfix">
+      <nav class="main-navigation clearfix">
+		<img src="img/logo.png" width="140" height="56" alt="nёrds">
+          <div class="user-block">
+            <a href="#" class="basket">КОРЗИНА</a>
+          </div>
+		  <ul>
             <li>
-              <a href="#">СТУДИЯ</a>
+              <a href="#" class="active">СТУДИЯ</a>
             </li>
             <li>
               <a href="#">КЛИЕНТЫ</a>
@@ -24,68 +29,106 @@
               <a href="#">КОНТАКТЫ</a>
              </li>
           </ul>
-          <div class="user-block">
-            <a href="#">КОРЗИНА</a>
-          </div>
+          
         </nav>
-    
-      <div class="slogan">
-        <b>Долго, дорого, скурпулезно.</b>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a href="#" class="btn btn-large">УЗНАТЬ БОЛЬШЕ</a>
-      </div>
+    <div class="slider">
+	    <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+           <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+   
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого,<br>скрупулезно</div>
+              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn btn-red" href="#">УЗНАТЬ БОЛЬШЕ</a>
+            </div>    
+        </div>
+      
+	      <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+              <a class="btn btn-red" href="#">УЗНАТЬ БОЛЬШЕ</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только наркотики,<br> только хардкор!</div>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+              <a class="btn btn-red" href="#">УЗНАТЬ БОЛЬШЕ</a>
+            </div>
+          </div>
+          </div>
+     
+	  
 	</div>
   </header>
 
   <main class="main">
     <div class="container clearfix">
+	  <div class="box clearfix">
       <div class="container-item">
-        <a href="#">
+        <a href="#" class="container-href">
           <img src="img/layer10.png" alt="ВЕБ-САЙТЫ">
           <h2 class="product-name">ВЕБ-САЙТЫ</h2>
         </a>
-        <p class="product-discription">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <a href="#" class="btn">ЗАКАЗАТЬ</a>
+        <p class="product-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+        <a href="#" class="btn btn-red">ЗАКАЗАТЬ</a>
       </div>
       <div class="container-item">
-        <a href="#">
+        <a href="#" class="container-href">
           <img src="img/layer11.png" alt="ПРИЛОЖЕНИЯ">
            <h2 class="product-name">ПРИЛОЖЕНИЯ</h2>
         </a>
-        <p class="product-discription">Покорите топ-10 приложений в AppStore и Google Play</p>
-        <a href="#" class="btn">ЗАКАЗАТЬ</a>
+        <p class="product-description">Покорите топ-10 приложений в AppStore и Google Play</p>
+        <a href="#" class="btn btn-green">ЗАКАЗАТЬ</a>
       </div>
       <div class="container-item">
-        <a href="#">
+        <a href="#" class="container-href">
           <img src="img/layer12.png" alt="ПРЕЗЕНТАЦИИ">
            <h2 class="product-name">ПРЕЗЕНТАЦИИ</h2>
         </a>
-        <p class="product-discription">Вы даже не подозреваете насколько вы изумительны!</p>
-        <a href="#" class="btn">ЗАКАЗАТЬ</a>
+        <p class="product-description">Вы даже не подозреваете насколько вы изумительны!</p>
+        <a href="#" class="btn btn-yellow">ЗАКАЗАТЬ</a>
       </div>
+	  </div>
+	  <div class="box clearfix">
+	  
       <section class="about-us">
-        <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b></p>
-        <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет выше креатива. Работаем не покладая рук как роботы.</p>
+        <p class="about-us-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="about-us-detail">Исповедуем принципы минимализма и чистоты.Ставим математический расчет выше креатива. Работаем не покладая рук как роботы.</p>
+	  </section>
+	  <div class="column-eight">
         <span>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</span>
         <ul class="list">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приожений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-      </section>
-      <div class="features">
+		</div>
+      
+      <div class="column-three">
         <span>КАК МЫ РАБОТАЕМ:</span>
-          <ul>
+          <ul class="list">
             <li>С самоотдачей 146%</li>
             <li>Соблюдая сроки на 100%</li>
             <li>По предоплате 50%</li>
           </ul>
       </div>
+	  </div>
+	  <div class="box clearfix">
       <section class="work">
-        <a href="#" class="container-item">GLUKHANKO</a>
-        <a href="#" class="container-item">html academy</a>
-        <a href="#" class="container-item">Barbeshop BORODINSKI</a>
+        <a href="#" class="container-item work-item sprite-glukharko">GLUKHANKO</a>
+        <a href="#" class="container-item work-item sprite-academy">html academy</a>
+        <a href="#" class="container-item work-item sprite-borodinski">Barbeshop BORODINSKI</a>
       </section>
+	 </div>
     </div>
   </main>
 
@@ -93,14 +136,14 @@
     <div class="map">
      </div>
 	  <div class="container">
-        <div class="column-four">
-          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+        <div class="column-four social-conteiner" >
+          <a href="#" class="social-btn sprite-iconvk">Вконтакте</a>
+          <a href="#" class="social-btn sprite-iconfacebook">Фейсбук</a>
+          <a href="#" class="social-btn sprite-iconinstagramm">Инстаграм</a>
 	    </div>
 	    <div class="column-seven">
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+          <p class="offer-title">Давайте дружить, это выгодно!</p>
+          <p class="offer">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>

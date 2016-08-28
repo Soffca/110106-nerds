@@ -3,35 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>nёrd's</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/style.css" rel="stylesheet">
   </head>
 <body>
 
   <header class="main-header">
-    <div class="container">
-	  <nav class="main-navigation">
-        <a class="index-logo">
+    <div class="container clearfix">
+
+      <nav class="main-navigation clearfix">
+			        <a class="index-logo">
           <img src="img/logo.png" width="139" height="56" alt="nёrds">
         </a>
-      
-        <ul>
-          <li>
-            <a href="#">СТУДИЯ</a>
-          </li>
-          <li>
-            <a href="#">КЛИЕНТЫ</a>
-          </li>
-          <li>
-            <a href="#">МАГАЗИН</a>
-          </li>
-          <li>
-            <a href="#">КОНТАКТЫ</a>
-          </li>
-        </ul>
-        <div class="user-block">
-          <a href="#">КОРЗИНА</a>
-        </div>
-      </nav>
+          <div class="user-block">
+            <a href="#" class="basket">КОРЗИНА</a>
+          </div>
+		  <ul>
+            <li>
+              <a href="#" class="active">СТУДИЯ</a>
+            </li>
+            <li>
+              <a href="#">КЛИЕНТЫ</a>
+            </li>
+            <li>
+              <a href="#">МАГАЗИН</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТЫ</a>
+             </li>
+          </ul>
+          
+        </nav>
     
       <h1 class="welcome">ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
       
@@ -45,101 +48,179 @@
         <span class="filter-header">СТОИМОСТЬ:</span>
         <div class="range"></div>
         <span class="filter-header">СЕТКА:</span>
-          <ul>
+          <ul class="filter-list">
             <li>
-              <label for="adaptive">Адаптивная</label>
-			  <input type="radio" id="adaptive"checked>
+			<input type="radio" id="adaptive"checked name="toggle">
+              <label class="sprite-before radio-label" for="adaptive">Адаптивная</label>
+			  
             </li>
             <li>
-              <label for="fixed">Фиксированная</label>
-			  <input type="radio" id="fixed">
+			<input type="radio" id="fixed" name="toggle">
+              <label class="sprite-before radio-label"  for="fixed">Фиксированная</label>
+			  
             </li>
             <li>
-              <label for="rubber">Резиновая</label>
-			  <input type="radio" id="rubber">
+			<input type="radio" id="rubber" name="toggle">
+              <label class="sprite-before radio-label"  for="rubber">Резиновая</label>
+			  
             </li>
           </ul>
         <span class="filter-header">ОСОБЕННОСТИ:</span>
-          <ul>
+          <ul class="filter-list">
             <li>
-              <label for="slider">Слайдер</label>
-			  <input type="checkbox" id="slider" checked>
+			<input type="checkbox" id="slider" checked>
+              <label class="sprite-before checkbox-label" for="slider">Слайдер</label>
+			  
             </li>
             <li>
-              <label for="advantages">Блок преимуществ</label>
-			  <input type="checkbox" id="advantages">
+			<input type="checkbox" id="advantages">
+              <label class="sprite-before checkbox-label" for="advantages">Блок преимуществ</label>
+			  
             </li>
             <li>
-              <label for="news">Новости</label>
-			  <input type="checkbox" id="news" checked>
+			<input type="checkbox" id="news" checked>
+              <label class="sprite-before checkbox-label" for="news">Новости</label>
+			  
             </li>
             <li>
-              <label for="gallery">Галерея</label>
-			  <input type="checkbox" id="gallery">
+			<input type="checkbox" id="gallery">
+              <label class="sprite-before checkbox-label" for="gallery">Галерея</label>
+			  
             </li>
             <li>
-              <label for="basket">Корзина</label>
-			  <input type="checkbox" id="basket">
+			<input type="checkbox" id="basket">
+              <label class="sprite-before checkbox-label" for="basket">Корзина</label>
+			  
             </li>
           </ul>
-        <button type="button" value="show">ПОКАЗАТЬ</button>
+        <button  class="btn btn-submit" type="button" value="show">ПОКАЗАТЬ</button>
       </form>
     </div>
     <div class="column-seven">
       <div class="sort-container">
         <span class="sort-name">СОРТИРОВАТЬ:</span>
-        <a href="#">ПО ЦЕНЕ</a>
-        <a href="#">ПО ТИПУ</a>
-        <a href="#">ПО ФУНКЦИОНАЛУ</a>
-        <div class="asc">
-		</div>
-		<div class="desk">
+        <a class="sort-item" href="#">ПО ЦЕНЕ</a>
+        <a class="sort-item" href="#">ПО ТИПУ</a>
+        <a class="sort-item sort-item-active" href="#">ПО ФУНКЦИОНАЛУ</a>
+		<div class="sort-direction">
+		<a class="desc sprite desc-active">
+		</a>
+        <a class="asc sprite">
+		</a>
+
 		</div>
 	  </div>
-        <ul class="clearfix">
+        <ul class="product-catalog clearfix">
           <li class="product-item">
-            <a href="#"> 
-			  <img src="img/layer34.jpg" alt="Макет-AVIATOR">
-		    </a>
+		  <div class="product-item-header">
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			</div>
+			<img src="img/layer34.jpg" alt="Макет-AVIATOR">
+			<div class="price">
+			  <p class="price-header">AVIATOR</p>
+			  <p class="price-description">Интернет-магазин с личным кабинетом</p>
+			  <a class="btn btn-red btn-price" href="#">10000 Р.</a>
+			  </div>
           </li>
            <li class="product-item">
-            <a href="#">
+			<div class="product-item-header">
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			</div>
 			  <img src="img/layer35.jpg" alt="Макет-SUNSET">
-			</a>
+			  <div class="price">
+			  <p class="price-header">SUNSET</p>
+			  <p class="price-description">Интернет-магазин с личным кабинетом</p>
+			  <a class="btn btn-red btn-price" href="#">10000 Р.</a>
+			  </div>
           </li>
            <li class="product-item">
-            <a href="#">
+           <div class="product-item-header">
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			</div>
 			  <img src="img/layer36.jpg" alt="Макет-FORTE">
-			</a>
+			  <div class="price">
+			  <p class="price-header">FORTE</p>
+			  <p class="price-description">Интернет-магазин с личным кабинетом</p>
+			  <a class="btn btn-red btn-price" href="#">10000 Р.</a>
+			  </div>
+		
           </li>
            <li class="product-item">
-            <a href="#">
+         <div class="product-item-header">
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			</div>
 			  <img src="img/layer37.jpg" alt="Макет-MODERN ORGANIC THAI">
-			</a>
+			  <div class="price">
+			  <p class="price-header">MODERN ORGANIC THAI</p>
+			  <p class="price-description">Интернет-магазин с личным кабинетом</p>
+			  <a class="btn btn-red btn-price" href="#">10000 Р.</a>
+			  </div>
           </li>
            <li class="product-item">
-            <a href="#">
+           <div class="product-item-header">
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			</div>
 			  <img src="img/layer39.jpg" alt="Макет-AVENUE">
-			</a>
+		      <div class="price">
+			  <p class="price-header">AVENUE</p>
+			  <p class="price-description">Интернет-магазин с личным кабинетом</p>
+			  <a class="btn btn-red btn-price" href="#">10000 Р.</a>
+			  </div>
           </li>
            <li class="product-item">
-            <a href="#">
+           <div class="product-item-header">
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			<div class="circle">
+			</div>
+			</div>
 			  <img src="img/layer38.jpg" alt="Макет-DOVETAIL">
-			</a>
+			  <div class="price">
+			  <p class="price-header">DOVETAIL</p>
+			  <p class="price-description">Интернет-магазин с личным кабинетом</p>
+			  <a class="btn btn-red btn-price" href="#">10000 Р.</a>
+			  </div>
           </li>
           </ul>
 	  <ul class="pager">
 	    <li>
-	      <a  class="page" href="#">1</a>
+	      <a  class="page page-now" href="#">1</a>
  	    </li>
             <li>
-	      <a  class="page-active" href="#">2</a>
+	      <a  class="page" href="#">2</a>
  	    </li>
             <li>
 	      <a  class="page" href="#">3</a>
  	    </li>
             <li>
-	      <a  class="page" href="#">СЛЕДУЮЩАЯ</a>
+	      <a  class="page page-next" href="#">СЛЕДУЮЩАЯ</a>
  	    </li>
 	  </ul>
       
@@ -147,20 +228,20 @@
   </div>
   </main>
 
-  <footer class="main-footer">
-      <div class="map">
-      </div>
+ <footer class="main-footer">
+    <div class="map">
+     </div>
 	  <div class="container">
-        <div class="column-four">
-          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+        <div class="column-four social-conteiner" >
+          <a href="#" class="social-btn sprite-iconvk">Вконтакте</a>
+          <a href="#" class="social-btn sprite-iconfacebook">Фейсбук</a>
+          <a href="#" class="social-btn sprite-iconinstagramm">Инстаграм</a>
 	    </div>
 	    <div class="column-seven">
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+          <p class="offer-title">Давайте дружить, это выгодно!</p>
+          <p class="offer">Скидка 10% для друзей из социальных сетей.</p>
         </div>
-      </div>		
-   </footer>
+      </div>
+    </footer>
  </body>
 </html>
