@@ -102,7 +102,7 @@ ul {
 .main-header {
 	background-color: #eeeeee;
 	min-height: 330px;
-	
+
 }
 
 .container{
@@ -127,8 +127,8 @@ ul {
 }
 .slider-controls {
   position: absolute;
-  bottom: 95px;
-  left: 50%;
+  bottom: 86px;
+  left: 49%;
   
   width: 200px;
   margin-left: -100px;
@@ -168,7 +168,7 @@ ul {
 .slide .btn {
   display: block;
   width: 220px;
-  margin-top: 25px;
+  margin-top: 27px;
   padding: 0 10px;
   
   font-weight: 300;
@@ -217,13 +217,14 @@ ul {
 .welcome{
 	
 	width: 700px;
-	margin: 75px  auto 0;
+	margin: 70px  auto 0;
 	line-height:40px;
 	text-align:center;
 }
 .main{
 	background-color: #fff;
-	padding-top: 80px;
+	padding-top: 78px;
+	padding-bottom:76px;
 }
 .column-four{
 	float: left;
@@ -242,13 +243,14 @@ ul {
 }
 .product-catalog {
 	margin-top: 20px;
+	margin-bottom:0;
 	padding: 0;
 	list-style: none;
 }
 .product-item{
 	position: relative;
 	float: left;
-	margin-bottom: 80px;
+	margin-bottom: 74px;
 	width: 240px;
 }
 .product-item:nth-child(2n){
@@ -276,7 +278,7 @@ ul {
 	background-repeat: no-repeat;
 	background-position: 100% 58px;
 	
-	padding-top: 74px;
+	padding-top: 69px;
 
 }
 .about-us-title {
@@ -305,7 +307,7 @@ ul.list {
 .list li {
 	position: relative;
 	display: block;
-	margin-top: 26px;
+	margin-top: 23px;
 	padding-left: 37px;
 	font-size:16px;
 	
@@ -389,7 +391,7 @@ a.index-logo{
 	white-space:nowrap;
 	padding: 0 40px;
 	font-size: 12px;
-	line-height: 40px;
+	line-height: 38px;
 	color: #ffffff;
 	text-decoration: none;
 	text-align: center;
@@ -453,16 +455,21 @@ a.index-logo{
 	font-size: 18px;
 	line-height: 30px;
 	color: #283136;
-	margin: 22px 0 19px;
+	margin: 22px 0 0;
 }
 .product-description {
-	margin-bottom: 28px;
+	margin: 14px 0 28px;
 	
 }
 .box {
 	border-bottom: 2px solid #eeeeee;
 	padding: 0 10px;
 }
+
+.box:last-child{
+	margin-bottom:11px;
+}
+
 .work {
 	font-size: 0;
 }
@@ -547,7 +554,7 @@ opacity: 1;
 	float:right;
 }
 .social-conteiner {
-	padding-top: 76px;
+	padding-top: 73px;
 	padding-bottom: 76px;
 	font-size: 0;
 }
@@ -595,11 +602,12 @@ opacity: 1;
 	font-size: 36px;
 	line-height: 36px;
 	margin-bottom: 11px;
-	margin-top: 80px;
+	margin-top: 70px;
 }
 .offer {
 	font-size: 16px;
 	line-height: 22px;
+	margin: 0;
 }
 .pager{
 	margin: 0;
@@ -610,10 +618,16 @@ opacity: 1;
 	display: inline-block;
 	
 }
+
+.sort-name{
+	font-size:12px;
+}
+
 .page {
 	display: block;
 	border-radius: 3px;
-	margin-right: 10px;
+	margin-right: 6px;
+	font-size: 12px;
 	text-align: center;
 	width: 34px;
 	height: 34px;
@@ -648,11 +662,13 @@ opacity: 1;
 	line-height: 25px;
 	vertical-align: top;
 	margin-top: 16px;
+	font-size:16px;
 }
 .checkbox-label {
 	line-height: 23px;
 	vertical-align: top;
 	margin-top: 18px;
+	font-size:16px;
 }
 
 .radio-label::before{
@@ -680,12 +696,23 @@ input:checked~.checkbox-label::before{
 	 background-position: -5px -383px;
 
 }
+.filter-header{
+	font-size:18px;
+}
+
+.btn-filter{
+	margin-top:8px;
+}
+
 .filter-list input {
 	display: none;
 }
+.filter-list>li{
+	margin-bottom: 11px;
+}
 .filter-list {
 	margin-top: 16px;
-	margin-bottom: 44px;
+	margin-bottom: 41px;
 }
 .sort-item {
 	margin-left: 45px;
@@ -695,6 +722,11 @@ input:checked~.checkbox-label::before{
 	line-height: 18px;
 	border-bottom: 1px dotted #00ca74;
 }
+
+.sort-item:first-child {
+	margin-left:35px;
+}
+
 .sort-item:hover {
 	border-bottom: 1px solid #00ca74;
 	color: #000;
@@ -785,7 +817,7 @@ input:checked~.checkbox-label::before{
 }
 .range-filter {
   width: 240px;
-  margin: 50px auto; 
+  margin: 17px 0 50px; 
 }
 .range-controls {
   position: relative;
@@ -857,7 +889,6 @@ input:checked~.checkbox-label::before{
 }
 .map {
 	position: relative;
-	margin-top:87px;
 }
 
 .map-image{
@@ -865,15 +896,15 @@ input:checked~.checkbox-label::before{
 }
 .baloon {
 	position: absolute;
-	bottom: 30%;
-	right: 12%;
+	bottom: 28.5%;
+    right: 11%;
 }
 .form-adress {
 	position: absolute;
-	top: 20%;
-    left: 15%;
+    top: 20.5%;
+    left: 13.4%;
 	box-sizing: border-box;
-	padding: 23px 20px 26px;
+	padding: 25px 20px 26px;
 	
 	width: 250px;
 	min-height: 240px;
@@ -883,12 +914,13 @@ input:checked~.checkbox-label::before{
 .form-adress-title {
 	font-size: 16px;
 	line-height: 30px;
-	margin-top: 0px;
-	margin-bottom: 22px;
+
+	margin:0;
 }
 .form-adress-contacts {
 	font-size: 16px;
 	line-height: 20px;
+	margin: 12px 0 19px;
 }
 .btn-contacts {
 	display: block;
@@ -897,6 +929,7 @@ input:checked~.checkbox-label::before{
 	margin: 31px auto 0;
 }
 .modal-content {
+	display: none;
 	box-sizing: border-box;
 	width: 630px;
     min-height: 417px;
