@@ -941,6 +941,9 @@ input:checked~.checkbox-label::before{
     transform: translateX(-50%);
 	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7);
 }
+.modal-content-show {
+  display: block;
+}
 .modal-content-close {
   position: absolute;
   top: 6px;
